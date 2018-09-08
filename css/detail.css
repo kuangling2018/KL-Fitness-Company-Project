@@ -1,0 +1,214 @@
+/*banner图片部分*/
+div.banner{margin-top: 1px;}
+/*产品部分*/
+#product-detail
+{
+    background-color: #FFFFFF;
+    margin-bottom: 10px;
+}
+/*面包屑导航部分*/
+#product-detail>div.bread-crumb
+{
+    height: 46px;padding: .8rem 0rem;color: #666666;box-sizing: border-box;
+    border-bottom: 1px solid #bebcbc;
+}
+#product-detail>div.bread-crumb>h3
+{
+    float: left;
+    font:18px "微软雅黑";
+    font-weight:bold;
+    color:#333;
+}
+#product-detail>div.bread-crumb>div{float: right;}
+/*左边部分*/
+#preview
+{
+     width:302px;float: left;
+     margin-top: 10px;margin-left: 20px;
+     position: relative;/*border: 1px solid red;*/
+}
+#preview>#mediumDiv
+{
+    width: 300px;height: 300px;
+    border: 1px solid #ddd;
+    margin-bottom: 5px;text-align:center;
+    position: relative;
+}
+#preview>#mediumDiv>img
+{
+     vertical-align:middle;
+     width:300px;
+     height:300px;
+}
+#preview>#mediumDiv>#mask
+{
+    position: absolute;width: 100px;
+    height: 100px;background: #ffa;
+    opacity: 0.5;top: 0;
+    left: 0;display:none;
+}
+#preview>#mediumDiv>#superMask
+{
+    position: absolute;
+    width: 300px;height: 300px;
+    opacity: 0;top: 0;left: 0;
+    cursor: move;
+}
+#preview>#largeDiv
+{
+    position: absolute;
+    width: 300px;height: 300px;
+    background: #fff;border: 1px solid #ddd;
+    top: 0px;left: 502px;text-align: center;
+    z-index: 999;overflow: hidden;
+    display: none;
+}
+#preview>#largeDiv>img{position: relative;}
+#preview>h1
+{
+     width: 302px;
+     height: 54px;
+     overflow:hidden;
+     padding: 0px;
+     position:relative;
+}
+ /*前后移动的按钮*/
+ #preview>h1>a.backward,#preview>h1>a.forward{
+     width: 17px;
+     height: 54px;
+     background-image: url(../images/iconlist_1.png);
+     background-repeat: no-repeat;
+     display:block;
+     z-index:20;
+     position:absolute;
+     top:0px;
+ }
+ #preview>h1>a.backward{
+     left:0px;
+ }
+ #preview>h1>a.forward{
+     right:0px;
+ }
+ #preview>h1>a.backward {
+     background-position: 0px -139px;
+ }
+ #preview>h1>a.backward:hover {
+     background-position: -34px -139px;
+ }
+ #preview>h1>a.backward.disabled {
+     background-position: -68px -139px;
+ }
+ #preview a.forward {
+     background-position: -17px -139px;
+ }
+ #preview>h1>a.forward:hover {
+     background-position: -51px -139px;
+ }
+ #preview>h1>a.forward.disabled {
+     background-position: -85px -139px;
+ }
+ /*产品的图标列表*/
+ #preview #icon_list {
+     height: 54px;
+     position:absolute;
+     left: 26px;
+     top: 0px;
+     transition:all .5s linear;
+ }
+ #preview #icon_list li {
+     width: 62px;
+     text-align: center;
+     float: left;
+ }
+ #preview #icon_list li img {
+     width: 50px;
+     height: 50px;
+     padding: 1px;
+     border: 1px solid #CECFCE;
+ }
+ #preview #icon_list li img:hover {
+     border: 2px solid #e4393c;
+     padding: 0;
+ }
+
+
+/*右边：产品详细信息部分*/
+#show-detail
+{
+    width:386px;float: left;margin-left: 200px;
+    margin-top: 10px;/*border: 1px solid red;*/
+}
+#show-detail>ul{height: 250px;}
+#show-detail>ul>li
+{
+    font-family:"微软雅黑",Arial;
+    font-size:15px;
+    color:#333;height: 40px;
+    font-weight: bold;
+}
+#show-detail>ul>li>span
+{
+    margin-left: 30px;
+}
+#show-detail>ul>li>span.price
+{
+    color: #24AE44;font-size: 20px;
+}
+#show-detail p.account{
+    margin-top:10px;
+}
+#show-detail p.account>span{
+    font-size:15px;
+    font-weight: bold;
+}
+#show-detail p.account>button{
+    width:36px;
+    height:36px;
+    text-align:center;
+    border:1px solid #ddd;
+    vertical-align:middle;
+    font-size:14px;
+}
+#show-detail p.account>input{
+    width:36px;
+    height:36px;
+    border:1px solid #ddd;
+    text-align:center;
+    font-size:14px;
+    box-sizing:border-box;
+    position:relative;
+    top:2px;
+}
+#show-detail div.shops{
+    margin-top:10px;
+}
+#show-detail div.shops>a{
+    display:inline-block;
+    width:160px;
+    height:50px;
+    line-height: 50px;
+    text-align:center;
+    border:1px solid #ddd;
+    font-size:20px;
+}
+#show-detail div.shops>a.buy{
+    color:#24AE44;
+    border-radius:2px;
+    background:linear-gradient(to bottom,#f0f0f0,#e0e0e0);
+}
+#show-detail div.shops>a.cart{
+    background:linear-gradient(to bottom,#24AE44,#5DBC73);
+    color:#fff;
+    border-radius:2px;
+}
+#show-detail div.shops>a.collection
+{
+    width:50px;
+    height:50px;
+    line-height:25px;
+    background:linear-gradient(to bottom,#24AE44,#5DBC73);
+    font-size:14px;
+    color:#fff;
+    position:relative;
+    top:10px;
+}

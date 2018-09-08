@@ -1,0 +1,114 @@
+#show{width: 1080px;margin: 0 auto;}
+#show>h2
+{
+	text-align: center;height: 57px;line-height: 57px;margin: 10px 0;
+	color: #464646;
+}
+#show>ul.content>li>a>img{width: 230px;height: 140px;}
+#show>div.title
+{
+	width: 240px;height: 60px;margin: 0 auto;display: flex;line-height: 50px;
+	flex-direction: row;flex-wrap: wrap;justify-content: space-between;
+}
+#show>div.title>a
+{
+	display: inline-block;width: 50px;height: 40px;line-height: 40px;
+	text-align: center;border-radius: 6px;font-size: 12px;
+}
+#show>ul.content>li
+{
+	width: 230px;height: 260px;float: left;
+	margin-left: 50px;border: 1px solid #D2D2D2;
+	border-radius: 6px;
+	margin-bottom: 45px;position: relative;
+}
+#show>ul.content>li:first-child
+{
+	margin-left: 0px;
+}
+#show>ul.content>li:nth-child(5)
+{
+	margin-left: 0px;
+}
+#show>ul.content>li:nth-child(9)
+{
+	margin-left: 0px;
+}
+#show>ul.content>li>a img{height: 260px;}
+#show>div>a.active{background: #18D26E;color: #FFFFFF;}
+
+
+/*遮罩效果的css*/
+#show div.shadow
+{
+	width: 230px;height: 260px;
+	background-color: #1D1A17;
+	opacity: 0.6;position: absolute;
+	top: 0px;z-index: 10;
+	display: none;
+}
+#show div.shadow>a
+{
+	position: absolute;width: 38px;height: 38px;top: 111px;
+}
+#show div.shadow>a:first-child{left: 72px;}
+#show div.shadow>a:last-child{left: 120px;}
+
+/*教练介绍框*/
+#show>div.fade
+{
+	left: 50%; top: 50%;
+  	width:300px;height:0;
+    opacity: 0;margin-top: -160px;margin-left: -150px;
+    transition: all 0.5s ease;
+    border-radius: 15px;position: fixed;
+    background: #fff; overflow: hidden;
+}
+#show>div.in
+{
+	left: 50%; top: 50%;
+  	width:300px;height:320px;
+    opacity: 0.9;margin-top: -160px;margin-left: -150px;
+    border-radius: 15px;z-index: 10;
+    position: fixed;background: #fff;
+    border:2px solid #ddd;
+}
+#show>div.fade>h1
+{
+    font-size:18px;
+    margin-top:0px;
+    text-align: center;
+    background: #18D26E;
+    line-height: 30px;
+    color:#fff;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+#show>div.fade ul
+{
+    list-style: none;padding-right: 20px;
+    padding-left: 20px;
+}
+#show>div.fade ul>li
+{
+    margin-top:15px;
+}
+#show>div.fade ul>li>span
+{
+	padding-left: 10px;font-weight: bold;
+}
+#show>div.fade ul>li>input
+{
+	margin-left: 10px;font-weight: bold;
+}
+#show>div.fade ul>li.txt-btn{text-align: center;}
+#show>div.fade ul>li.txt-btn>a
+{
+	display: inline-block;width: 50px;height: 30px;line-height: 30px;
+	text-align: center;border-radius: 6px;font-size: 12px;
+	border: 1px solid #fff;
+}
+#show>div.fade  ul>li.txt-btn>a.active
+{
+	background-color:#18D26E;color: white; 
+}

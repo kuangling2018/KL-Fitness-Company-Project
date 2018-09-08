@@ -1,0 +1,32 @@
+/*设置通用样式*/
+body,h1,h2,h3,h4,h5,h6,p,ul,ol,dl,dd,pre
+{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+img{vertical-align: middle;}
+a
+{
+	text-decoration: none;
+	color: #666;
+}
+a:hover{color: #18D26E;}
+.clear:after
+{
+	content:"";
+	display: block;
+	clear: both;
+}
+.clearmargin:before
+{
+	content:'';
+	display: table;
+}
+.lf{float: left;}/*快速的设置左浮动，减少代码量*/
+.rf{float: right;}/*快速的设置右浮动，减少代码量*/
+div.main/*不管什么页面，都用一个大div把它包起来*/
+{
+	width: 1080px;
+	margin: 0 auto;
+}

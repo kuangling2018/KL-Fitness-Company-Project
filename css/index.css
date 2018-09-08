@@ -1,0 +1,171 @@
+/*头图模块的css*/
+#banner 
+{
+	width: 1080px;height: 540px;overflow: hidden;
+	position: relative;margin: 0 auto;margin-top: 3px;
+}
+#banner>ul:first-child{position: absolute;left: 0;}
+#banner>ul:first-child>li{float: left;}
+#banner>ul:first-child>li>img{width: 1080px;height: 540px;}
+#banner a.ck_left,a.ck_right
+{
+	width: 36px;height: 72px;opacity: 0;
+	border-radius: 5px;text-align: center;
+	box-sizing: border-box;position: absolute;top: 234px;
+	z-index: 10;	
+}
+#banner a.ck_left
+{
+	left: 4px;background: #F4F4F3 url(../images/arrow-left.png) no-repeat center center;
+}
+#banner a.ck_right
+{
+	right: 4px;background: #F4F4F3 url(../images/arrow-right.png) no-repeat center center;
+}
+#banner>ul.slide
+{
+	position: absolute;left: 490px;bottom: 20px;z-index: 10;
+	width: 100px;height: 20px;text-align: center;
+}
+#banner>ul.slide>li
+{
+	float: left;width: 12px;height: 12px;background: white;border-radius: 50%;
+	margin-left: 8px;
+}
+#banner>div.left_part,div.right_part
+{
+	width: 540px;height: 540px;position: absolute;
+	opacity: 0;filter: alpha(opacity=0);
+}
+#banner>div.left_part
+{
+	background:green;left: 0;
+}
+#banner>div.right_part
+{
+	background:red;right: 0;
+}
+/*首页主体内容模块的css*/
+#index{width: 1080px;margin: 0 auto;margin-top: 20px;margin-bottom: 20px;}
+#index>div.companyIntro{width: 360px;height: 450px;}
+#index div.cm_title
+{
+	height: 46px;padding: .8rem 1rem;color: #24ae44;box-sizing: border-box;
+	background: -webkit-gradient(linear,0 0,0 bottom,from(#c9c9c9),to(#f8f8f8));
+    border-top: 1px solid #bebcbc;border-left: 1px solid #d7d7d7;
+    border-right: 1px solid #d7d7d7; border-radius: 3px;
+    -webkit-box-shadow: 0 2px 2px 1px rgba(0,0,0,.1);
+    box-shadow: 0 2px 2px 1px rgba(0,0,0,.1);
+}
+#index div.cm_content
+{
+	border-radius: 3px;border: 1px solid #E1E1E1;
+	margin-top: 20px;padding: 10px 8px;
+}
+/*公司介绍的模块的css*/
+#index>div.companyIntro>div.cm_title{width: 360px;}
+#index>div.companyIntro>div.cm_content{height: 344px;}
+#index>div.companyIntro>div.cm_content>p{text-align: justify;}
+#index>div.companyIntro>div.cm_content>ul
+{
+	margin-top: 20px;display: flex;
+	flex-direction: row;flex-wrap: wrap;justify-content: space-between;
+}
+#index>div.companyIntro>div.cm_content>ul>li
+{
+	text-align: center;width: 80px;
+}
+#index>div.companyIntro>div.cm_content>ul>li>a>img
+{
+	border: 1px solid #808080;border-radius: 4px;
+}
+#index>div.companyIntro>div.cm_content>ul>li>p{margin-top: 10px;}
+/*关于我们的模块的css*/
+#index>div.aboutUs{width: 700px;height:450px;}
+#index>div.aboutUs>div.cm_title{width: 700px;}
+#index>div.aboutUs>div.cm_content{height: 344px;}
+#index>div.aboutUs>div.cm_content>ul>li
+{
+	width: 100px;height: 40px;border: 1px solid #E1E1E1;
+	text-align: center;line-height: 40px;float: left;
+	margin-right: 10px;border-radius: 3px;
+}
+
+
+#index>div.aboutUs>div.cm_content>div.cm_content_right
+{
+	height: 0;overflow: hidden;width: 682px;
+	transition: all 0.5s linear;
+}
+#index>div.aboutUs>div.cm_content>div.cm_content_right.active
+{
+	height: 340px;
+}
+#index>div.aboutUs>div.cm_content>div.cm_content_right>a
+{
+	margin-top: 20px;
+}
+#index>div.aboutUs>div.cm_content>div.cm_content_right>a>img{width: 300px;}
+#index>div.aboutUs>div.cm_content>div.cm_content_right>ul
+{
+	margin-top: 20px;
+}
+#index>div.aboutUs>div.cm_content>div.cm_content_right>ul>li
+{
+	width: 366px;display: flex;flex-direction: row;flex-wrap: wrap;
+	justify-content: space-between;height: 32px;
+}
+.aboutUs_title{background: #24AE44;}
+.aboutUs_title>a{color: white;}
+
+/*成功案例和产品中心的公共css*/
+#index>div.successfulCase,div.productCenter{clear: both;margin-top: 20px;height: 358px;position: relative;}
+#index>div.successfulCase>div.cm_title,div.productCenter>div.cm_title{width: 1080px;}
+#index>div.successfulCase>div.cm_slide,div.productCenter>div.cm_slide
+{
+width: 1080px;height: 312px;overflow: hidden;margin: 0 auto;
+box-sizing: border-box;position: relative;
+}
+#index>div.successfulCase>div.cm_slide>ul,#index>div.productCenter>div.cm_slide>div>ul
+{
+position: absolute;left: 0;
+}
+#index>div.successfulCase>div.cm_slide>ul>li,#index>div.productCenter>div.cm_slide>div>ul>li
+{
+width: 240px;text-align: center;float: left;
+}
+#index>div.successfulCase>div.cm_slide>ul>li>img,#index>div.productCenter>div.cm_slide>div>ul>li>img
+{
+width: 208px;height: 267px;border-radius: 6px;
+}
+#index>div.successfulCase>div.cm_slide>ul>li>p,#index>div.productCenter>div.cm_slide>div>ul>li>p
+{margin-top: 8px;}
+
+/*成功案例模块的css*/
+#index>div.successfulCase>div.cm_slide{padding: 14px 2px;}
+#index>div.successfulCase>div.cm_slide>ul>li{margin-left: 24px;}
+
+/*产品中心模块的css*/
+#index>div.productCenter>div.cm_slide{padding: 14px 33px;margin: 0 auto;}
+#index>div.productCenter>div.cm_slide>div
+{
+	width: 1020px;height: 312px;position: relative;
+}
+#index>div.productCenter>div.cm_slide>div>ul>li
+{
+	margin-left: 10px;border: 1px solid #D2D2D2;
+}
+#index>div.productCenter>div.cm_slide a.slide_arrow_left,a.slide_arrow_right
+{
+	width: 24px;height: 24px;opacity: 0.5;border-radius: 50%;
+	text-align: center;box-sizing: border-box;position: absolute;
+	top: 142px;
+}
+#index>div.productCenter>div.cm_slide a.slide_arrow_left
+{
+	left: 0px;background: #000 url(../images/arrow-left.png) no-repeat center center;
+}
+#index>div.productCenter>div.cm_slide a.slide_arrow_right
+{
+	right: 0px;background: #000 url(../images/arrow-right.png) no-repeat center center;
+}

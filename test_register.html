@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>注册</title>
+	<link rel="stylesheet" type="text/css" href="css/base.css">
+	<link rel="stylesheet" type="text/css" href="css/register.css">
+</head>
+<body>
+	<div id="register">	
+		<div class="clear">
+			<a href="#"><img src="images/logo1.png" id="logo"></a>
+			<ul>
+				<li><strong>某某健身有限公司</strong></li>
+				<li><span>www.kuangling.com</span></li>
+			</ul>
+			<div>
+				<a href="test_login.html">登录</a>
+			</div>
+		</div>
+		<div class="user_register">
+			<h3>用户注册</h3>
+			<table>
+				<tbody>
+					<tr>
+						<td width="20px"><img src="images/username.png"></td>
+						<td width="250px">
+							<input type="text" name="mailbox" placeholder="请输入邮箱">
+							<span></span>
+						</td>
+					</tr>
+					<tr>
+						<td><img src="images/username.png"></td>
+						<td>
+							<input type="password" name="password" placeholder="请输入密码">
+							<span>*密码长度至少6位，但不超过20位</span>
+						</td>
+					</tr>
+					<tr>
+						<td><img src="images/username.png"></td>
+						<td>
+							<input type="password" name="password" placeholder="请输入确认密码">
+							<span></span>
+						</td>
+					</tr>
+					<tr>
+						<td><img src="images/username.png"></td>
+						<td>
+							<input type="text" name="telephone"  placeholder="请输入电话号码">
+							<span></span>
+						</td>
+					</tr>
+					<tr>
+						<td><img src="images/username.png"></td>
+						<td>
+							<input type="text" name="yzm" placeholder="请验证码">
+							<img src="data/00_code_gg.php" class="setyzm" />
+							<span><a href="#">*看不清,换一换</a></span>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+			<span>
+				<input type="checkbox" name="name" value="">
+				<a href="#">我已阅读并接受版权说明和隐私保护条款</a>
+			</span>	
+			<input type="button" name="" value="立即注册">
+		</div>
+	</div>
+	<script type="text/javascript" src="js/jquery-1.11.3.js"></script>
+	<script type="text/javascript" src="js/register.js"></script>
+</body>
+</html>

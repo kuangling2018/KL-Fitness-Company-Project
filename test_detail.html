@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+  <meta charset="UTF-8">
+  <title>商品详情页</title>
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/detail.css">
+</head>
+<body>
+  <div class="main">
+    <header id="header"></header>
+
+    <!-- banner图片 -->
+    <div class="banner">
+      <img src="images/detail_banner.png">
+    </div>
+    
+    <div id="product-detail" class="clear">
+      <!-- 面包屑导航部分 -->
+      <div class="bread-crumb clear">
+          <h3>产品中心</h3>
+          <div>
+            <span>当前位置：</span>
+            <a href="javascript:;">首页</a>
+            <span>&gt;</span>
+            <a href="javascript:;">产品中心</a>
+            <span>&gt;</span>
+            <span id="fname">按摩椅</span>            
+          </div>
+      </div>
+
+      <!-- 放大镜部分 -->
+      <div id="preview">  
+        <div id="mediumDiv">
+          <img id="mImg" src="">
+          <div id="mask"></div>
+          <div id="superMask"></div>
+        </div>
+        <div id="largeDiv">
+          <img src="">
+        </div>
+        <h1>
+          <a class="backward"></a>
+          <a class="forward"></a>
+          <ul id="icon_list">
+            <!-- 放大图片，小图片，中图片部分 -->
+<!--        <li><img src="images/equip/equip7/equip7_1_sm.jpg" data-md="${md}" data-lg="${lg}"></li>
+            <li><img src="images/equip/equip7/equip7_2_sm.jpg" data-md="${md}" data-lg="${lg}"></li> 
+            <li><img src="images/equip/equip7/equip7_3_sm.jpg" data-md="${md}" data-lg="${lg}"></li> 
+            <li><img src="images/equip/equip7/equip7_4_sm.jpg" data-md="${md}" data-lg="${lg}"></li>   -->
+          </ul>
+        </h1>
+      </div>
+
+      <!--中间产品详细信息-->
+      <div id="show-detail">
+
+        <ul>
+<!--           <li>产品名称:<span class="pname">一体式免安装按摩椅</span></li>
+          <li>产品型号:<span class="ptype">SR-A6L-1</span></li>
+          <li>产品颜色:<span class="pcolor">红色</span></li>
+          <li>产品净重:<span class="pweight">31KG</span></li>
+          <li>产品尺寸:<span class="psize">127.5*66.5*71cm</span></li>
+          <li>产品价格:<span class="price">￥8988.00</span></li> -->
+        </ul>
+
+        <!-- 数量 -->
+        <p class="account">
+          <span>数量：</span>
+          <button class="number-reduce">-</button>
+          <input type="text" value="1">
+          <button class="number-add">+</button>
+        </p>
+
+        <!-- 购买部分 -->
+        <div class="shops">
+          <a href="#" class="buy">立即购买</a>
+          <a href="#" class="cart">
+            加入购物车
+            <img src="images/product_detail_img7.png" alt="">
+          </a>
+          <a href="#" class="collection">
+            收藏
+            <img src="images/product_detail_img6.png" alt="">
+          </a>
+        </div>
+      </div>
+
+    </div>
+    
+    <footer id="footer"></footer>
+  </div>    
+  <script type="text/javascript" src="js/jquery-1.11.3.js"></script>
+  <script type="text/javascript" src="js/init.js"></script>
+  <script type="text/javascript" src="js/header.js"></script>
+  <script type="text/javascript" src="js/footer.js"></script>
+  <script type="text/javascript" src="js/detail.js"></script>
+</body>
+</html>

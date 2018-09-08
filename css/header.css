@@ -1,0 +1,108 @@
+#slogan
+{
+	width: 1080px;height: 40px;line-height: 40px;margin: 0 auto;
+	background-color: #EFEFEF;
+}
+#slogan>p{margin-left: 10px;float: left;}
+#slogan>p>span{font-weight: bold;}
+#slogan>a
+{
+	width: 30px;height: 20px;font-size: 12px;color: black;
+	text-align: center;line-height: 20px;margin-top: 10px;
+}
+#slogan>a:nth-child(3){border-right: 1px solid black;display: none;}
+#slogan>a:nth-child(4){border-right: 1px solid black;}
+#slogan>a:nth-child(5){border-right: 1px solid black;display: none;width: 38px;}
+#slogan>a:hover{color: #24AE44;}
+
+#top
+{
+	width: 1080px;height: 100px;margin: 0 auto;
+	background-image: url(../images/bg.jpg);
+}
+#top>div:first-child>a
+{
+	float: left;width: 200px;height:80px;text-align: center;line-height: 80px;
+	margin-left: 10px;
+}
+#top>div:first-child>a>img{height: 80px;width: 200px;}
+
+#top>div:first-child>ul{float: left;margin-top: 30px;margin-left: 10px;color: #B3B3B3;}
+#top>div:first-child>ul>li{height: 20px;line-height: 20px;font-size: 16px;}
+
+/*下拉菜单部分*/
+#top>div.nav 
+{
+	width: 600px;height: 40px;
+	margin-top: 30px;
+	float: right;
+}
+#top>div.nav >ul 
+{
+	display:-webkit-flex;
+	display:-moz-flex;
+	display:-ms-flex;
+	display:-o-flex;
+	display:flex;
+	position: relative;
+	z-index: 99;
+}
+#top>div.nav >ul>li 
+{
+	width:300px;
+	height:40px;
+	line-height:40px;
+	text-align:center;
+	cursor:pointer;
+	border-top:1px solid transparent;
+	border-bottom:1px solid transparent;
+}
+#top>div.nav >ul>li a{color: white;}
+#top>div.nav  li:hover 
+{
+	border-top:1px solid white;
+	border-bottom:1px solid white;
+}
+.subnav 
+{
+	width:100%;
+	perspective:400px;
+	perspective-origin:top;
+	max-height:0;
+}
+.subnav li 
+{
+	background-color: rgba(0,0,0,0.6);
+	opacity:0;
+	transform:rotateY(90deg);
+	transition:opacity 0.4s,transform 0.5s;
+}
+div.nav >ul>li:hover .subnav li 
+{
+	opacity:1;
+	transform:none;
+}
+div.nav >ul>li:hover .subnav li:nth-child(1) {
+	transition-delay:0ms;
+}
+div.nav >ul>li:hover .subnav li:nth-child(2) {
+	transition-delay:50ms;
+}
+div.nav >ul>li:hover .subnav li:nth-child(3) {
+	transition-delay:100ms;
+}
+div.nav >ul>li:hover .subnav li:nth-child(4) {
+	transition-delay:150ms;
+}
+.subnav li:nth-child(1) {
+	transition-delay:250ms;
+}
+.subnav li:nth-child(2) {
+	transition-delay:200ms;
+}
+.subnav li:nth-child(3) {
+	transition-delay:150ms;
+}
+.subnav li:nth-child(4) {
+	transition-delay:100ms;
+}

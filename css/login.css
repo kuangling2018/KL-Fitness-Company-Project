@@ -1,0 +1,82 @@
+#login
+{
+	width: 1080px;height: 600px;border: 1px solid #000;
+	margin: 0 auto;background: url(../images/login_bg.jpg) no-repeat;
+}
+#login>div:first-child
+{
+	width: 1080px;height: 100px;margin: 0 auto;
+	margin-bottom: 20px;	
+}
+#login>div:first-child>a
+{
+	float: left;width: 200px;height:80px;text-align: center;line-height: 80px;
+	margin-left: 10px;
+}
+#login>div:first-child>a>img{height: 80px;width: 200px;}
+#login>div:first-child>ul{float: left;margin-top: 30px;margin-left: 10px;color: black;}
+#login>div:first-child>ul>li{height: 20px;line-height: 20px;font-size: 16px;color: #DBDBDB;}
+#login>div:first-child>div
+{
+	float: right;width: 100px;height: 80px;
+	line-height: 80px;
+	text-align: center;
+}
+#login>div:first-child>div>a
+{
+	color: #DBDBDB;font-size: 14px;width: 80px;height: 30px;background: #C83734;
+	display: inline-block;border-radius: 8px;margin-top: 25px;line-height: 30px;
+}
+
+#login>div.user_login
+{
+	width: 500px;margin-top: 100px;margin-left: 80px;
+}
+#login>div.user_login>h3{color: #DBDBDB;font-weight: normal;margin-bottom: 20px;}
+#login>div.user_login>ul
+{
+	width: 500px;height: 78px;
+	margin-bottom: 10px;
+}
+#login>div.user_login>ul>li
+{
+	margin-bottom: 16px;color: white;
+}
+#login>div.user_login>ul>li>img{height: 30px;}
+#login>div.user_login>ul>li>input
+{
+	width: 272px;height: 30px;padding: 4px 10px;
+	box-sizing: border-box;
+}
+#login>div.user_login>span
+{
+	margin-left: 250px;width: 60px;
+	display: block;
+}
+#login>div.user_login>span>a
+{
+	font-size: 14px;color: #DBDBDB;
+}
+#login>div.user_login>span>a:hover{color: #18D26E;}
+#login>div.user_login>input
+{
+	width: 310px;height: 40px;background: #C83734;color: #FFE5E6;
+	border: none;outline: none;margin-top: 10px;
+}
+#login>div.user_login .login_init{display: none;}
+#login>div.user_login .login_focus
+{
+	font-size: 12px;display: inline-block;
+}
+#login>div.user_login .login_success
+{
+	background: url(../images/ok.png) no-repeat left center;
+	display: inline-block; width: 20px;height: 20px;
+	vertical-align: middle;
+}
+#login>div.user_login .login_fail
+{
+	background: url(../images/err.png) no-repeat left center;
+	display: inline-block; width: 20px;height: 20px;
+	vertical-align: middle;
+}

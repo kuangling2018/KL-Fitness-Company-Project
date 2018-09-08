@@ -1,0 +1,85 @@
+#register
+{
+	width: 1080px;height: 600px;border: 1px solid #000;
+	margin: 0 auto;background: url(../images/login_bg.jpg) no-repeat;
+}
+#register>div:first-child
+{
+	width: 1080px;height: 100px;margin: 0 auto;
+	margin-bottom: 20px;	
+}
+#register>div:first-child>a
+{
+	float: left;width: 200px;height:80px;text-align: center;line-height: 80px;
+	margin-left: 10px;
+}
+#register>div:first-child>a>img{height: 80px;width: 200px;}
+#register>div:first-child>ul{float: left;margin-top: 30px;margin-left: 10px;color: black;}
+#register>div:first-child>ul>li{height: 20px;line-height: 20px;font-size: 16px;color: #DBDBDB;}
+#register>div:first-child>div
+{
+	float: right;width: 100px;height: 80px;
+	line-height: 80px;
+	text-align: center;
+}
+#register>div:first-child>div>a
+{
+	color: #DBDBDB;font-size: 14px;width: 80px;height: 30px;background: #C83734;
+	display: inline-block;border-radius: 8px;margin-top: 25px;line-height: 30px;
+}
+
+
+#register>div.user_register
+{
+	width: 564px;margin-left: 60px;margin-top: 60px;
+}
+#register>div.user_register>h3{color: #DBDBDB;font-weight: normal;margin-bottom: 20px;}
+#register>div.user_register>table
+{
+	height: 240px;width: 564px;
+	border-collapse: collapse;table-layout: fixed;
+}
+#register>div.user_register>table td
+{
+	height: 30px;font-size: 12px;color: white;
+}
+#register>div.user_register>table>tbody>tr>td img{height: 30px;}
+#register>div.user_register>table>tbody input
+{
+	width: 272px;height: 30px;padding: 4px 10px;
+	box-sizing: border-box;
+}
+#register>div.user_register>table>tbody input
+{
+	width: 272px;height: 30px;padding: 4px 10px;
+	box-sizing: border-box;
+}
+#register>div.user_register>table>tbody  img.setyzm
+{
+	position: relative;top: -2px;
+}
+#register>div.user_register>span
+{
+	font-size: 12px;height: 14px;line-height: 14px;width: 300px;
+	color: white;display: block;margin-left: 80px;
+	margin-bottom: 10px;margin-top: 10px; 
+}
+#register>div.user_register span>a{color: white;}
+#register>div.user_register span>a:hover{color: #18D26E;}
+#register>div.user_register>input
+{
+	width: 320px;height: 40px;background: #C83734;color: #FFE5E6;
+	border: none;outline: none;margin-top: 10px;
+}
+#register>div.user_register>table .register_success
+{
+	background: url(../images/ok.png) no-repeat left center;
+	display: inline-block; width: 20px;height: 20px;
+	vertical-align: middle;
+}
+#register>div.user_register>table .register_fail
+{
+	background: url(../images/err.png) no-repeat left center;
+	display: inline-block; width: 20px;height: 20px;
+	vertical-align: middle;
+}
